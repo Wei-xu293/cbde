@@ -1,0 +1,6 @@
+Table corpus created
+Finished storing textual data
+Minimum time: 0.471947 seconds
+Maximum time: 1.614666 seconds
+Average time: 0.925559 seconds
+Standard deviation: 0.070079 seconds
