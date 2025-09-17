@@ -4,3 +4,12 @@ Minimum time: 0.471947 seconds
 Maximum time: 1.614666 seconds
 Average time: 0.925559 seconds
 Standard deviation: 0.070079 seconds
+
+Total 114m 12.1s
+
+bookcorpus small 1,527,753 rows
+Finished storing textual data
+Minimum time: 0.831936 seconds
+Maximum time: 2.089854 seconds
+Average time: 0.990358 seconds
+Standard deviation: 0.116626 seconds
