@@ -1,3 +1,5 @@
+Storing text
+
 Table corpus created
 Finished storing textual data
 Minimum time: 0.471947 seconds
@@ -13,3 +15,14 @@ Minimum time: 0.831936 seconds
 Maximum time: 2.089854 seconds
 Average time: 0.990358 seconds
 Standard deviation: 0.116626 seconds
+
+Storing embeddings
+
+Table embeddings created.
+Finished storing the 1527753 embeddings.
+Minimum time: 8.627728 seconds
+Maximum time: 11.970323 seconds
+Average time: 11.211960 seconds
+Standard deviation: 0.323633 seconds
+
+64m 37.7s
