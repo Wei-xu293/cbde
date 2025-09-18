@@ -16,6 +16,8 @@ Maximum time: 2.089854 seconds
 Average time: 0.990358 seconds
 Standard deviation: 0.116626 seconds
 
+Around 2 minutes
+
 Storing embeddings
 
 Table embeddings created.
