@@ -28,3 +28,91 @@ Average time: 11.211960 seconds
 Standard deviation: 0.323633 seconds
 
 64m 37.7s
+
+
+usually , he would be tearing around the living room , playing with his toys .
+Top 2 similars by Euclidean distance:
+i 'd watch him when he was n't looking , and paid attention to the little things , like how he shielded my body with his whenever we were going somewhere .
+she followed him as he made his way into the living room .
+Top 2 similars by Manhattan distance:
+i 'd watch him when he was n't looking , and paid attention to the little things , like how he shielded my body with his whenever we were going somewhere .
+`` what i 'm wondering is what got him so fired up that he would stomp into a hospital , call you out , and then punch you ?
+
+but just one look at a minion sent him practically catatonic .
+Top 2 similars by Euclidean distance:
+he could n't fight the warmth that spread through his chest when mason snuggled close to his side .
+`` minions . ''
+Top 2 similars by Manhattan distance:
+his heartbeat accelerated at the thought .
+he was staring at aidan and noah with a contemplative look on his face .
+
+that had been megan 's plan when she got him dressed earlier .
+Top 2 similars by Euclidean distance:
+when he got back to the bathroom , megan was struggling with the zipper at the back of her dress .
+he should have been flattered that a young , sexy woman like megan desired him .
+Top 2 similars by Manhattan distance:
+when he got back to the bathroom , megan was struggling with the zipper at the back of her dress .
+megan was his-she was really going to be his for the rest of his life .
+
+he 'd seen the movie almost by mistake , considering he was a little young for the pg cartoon , but with older cousins , along with her brothers , mason was often exposed to things that were older .
+Top 2 similars by Euclidean distance:
+and no , mason 's father does n't have anything to do with him . ''
+she dreaded the day when mason was old enough to ask about his father .
+Top 2 similars by Manhattan distance:
+and no , mason 's father does n't have anything to do with him . ''
+although he was n't mason 's biological father , the love he felt for him was just as strong as if he had been a part of his conception .
+
+she liked to think being surrounded by adults and older kids was one reason why he was a such a good talker for his age .
+Top 2 similars by Euclidean distance:
+he always seemed fascinated by every single thing she had to say , which was quite a change from most of the guys she dated .
+because he was older , refined , and a doctor , she could have felt intimidated by him .
+Top 2 similars by Manhattan distance:
+because he was older , refined , and a doctor , she could have felt intimidated by him .
+he always seemed fascinated by every single thing she had to say , which was quite a change from most of the guys she dated .
+
+`` are n't you being a good boy ? ''
+Top 2 similars by Euclidean distance:
+you be a good boy , okay ? ''
+`` he 's a good boy .
+Top 2 similars by Manhattan distance:
+you be a good boy , okay ? ''
+`` he 's a good boy .
+
+she said .
+Top 2 similars by Euclidean distance:
+she asked .
+she asked .
+Top 2 similars by Manhattan distance:
+she asked .
+she asked .
+
+mason barely acknowledged her .
+Top 2 similars by Euclidean distance:
+`` guess i should keep mason clear of her too , huh ? ''
+some guys would have played with mason only to get on her good side .
+Top 2 similars by Manhattan distance:
+`` guess i should keep mason clear of her too , huh ? ''
+some guys would have played with mason only to get on her good side .
+
+instead , his baby blues remained focused on the television .
+Top 2 similars by Euclidean distance:
+with his professional football career on the rise , davis had n't wanted to be shackled with the responsibilities of a baby .
+every aspect of the pregnancy and birth had been special to him .
+Top 2 similars by Manhattan distance:
+with his professional football career on the rise , davis had n't wanted to be shackled with the responsibilities of a baby .
+he looked perfectly content to lose sleep if it meant being surrounded by his wife and children .
+
+since the movie was almost over , megan knew she better slip into the bedroom and finish getting ready .
+Top 2 similars by Euclidean distance:
+surely megan had to be seeing how much she enjoyed spending time with him in the hospital and would soon decide that she wanted more .
+not wanting to go too far in case megan needed him , he began pacing around the bedroom .
+Top 2 similars by Manhattan distance:
+surely megan had to be seeing how much she enjoyed spending time with him in the hospital and would soon decide that she wanted more .
+not wanting to go too far in case megan needed him , he began pacing around the bedroom .
+
+Minimum time: 2.704524 seconds
+Maximum time: 3.128923 seconds
+Average time: 2.768214 seconds
+Standard deviation: 0.131133 seconds
+
+28.8s
