@@ -1,0 +1,131 @@
+Insert and generating embeddings
+Minimum time: 268.333851 seconds
+Maximum time: 394.667032 seconds
+Average time: 300.466737 seconds
+Standard deviation: 49.805606 seconds
+
+usually , he would be tearing around the living room , playing with his toys .
+
+Query 0
+usually , he would be tearing around the living room , playing with his toys .
+he could n't remember the last time he 'd spent an entire day indoors , and within an hour he was pacing in circles around the living room .
+walking into her space , he could n't help but notice how little furniture she had .
+
+Query 1
+usually , he would be tearing around the living room , playing with his toys .
+he could n't remember the last time he 'd spent an entire day indoors , and within an hour he was pacing in circles around the living room .
+having made the decision , she calculated the distance .
+
+but just one look at a minion sent him practically catatonic .
+
+Query 0
+but just one look at a minion sent him practically catatonic .
+`` distant ?
+distance simply was n't 'done ' in this line of business .
+
+Query 1
+`` distant ?
+distance simply was n't 'done ' in this line of business .
+having made the decision , she calculated the distance .
+
+that had been megan 's plan when she got him dressed earlier .
+
+Query 0
+that had been megan 's plan when she got him dressed earlier .
+having made the decision , she calculated the distance .
+megan glanced between the two of them .
+
+Query 1
+that had been megan 's plan when she got him dressed earlier .
+megan knew what he meant when the plane started gaining speed down the runaway .
+megan vaguely remembered what knobs and meters she had looked at before they took off .
+
+he 'd seen the movie almost by mistake , considering he was a little young for the pg cartoon , but with older cousins , along with her brothers , mason was often exposed to things that were older .
+
+Query 0
+he 'd seen the movie almost by mistake , considering he was a little young for the pg cartoon , but with older cousins , along with her brothers , mason was often exposed to things that were older .
+both mason and noah wanted to go with the bigger kids .
+damn , he was a lot older than her .
+
+Query 1
+he 'd seen the movie almost by mistake , considering he was a little young for the pg cartoon , but with older cousins , along with her brothers , mason was often exposed to things that were older .
+`` yes , mason is almost two .
+and no , mason 's father does n't have anything to do with him . ''
+
+she liked to think being surrounded by adults and older kids was one reason why he was a such a good talker for his age .
+
+Query 0
+she liked to think being surrounded by adults and older kids was one reason why he was a such a good talker for his age .
+he had n't thought much about her when they were young and even less as he 'd grown up .
+he 'd grown used to knowing she was close by .
+
+Query 1
+she liked to think being surrounded by adults and older kids was one reason why he was a such a good talker for his age .
+he had n't thought much about her when they were young and even less as he 'd grown up .
+he 'd grown used to knowing she was close by .
+
+`` are n't you being a good boy ? ''
+
+Query 0
+`` are n't you being a good boy ? ''
+`` he 's a good boy .
+you be a good boy , okay ? ''
+
+Query 1
+`` are n't you being a good boy ? ''
+`` he 's a good boy .
+you be a good boy , okay ? ''
+
+she said .
+
+Query 0
+having made the decision , she calculated the distance .
+distance simply was n't 'done ' in this line of business .
+it 's the distance between us .
+
+Query 1
+having made the decision , she calculated the distance .
+distance simply was n't 'done ' in this line of business .
+new yorkers talked a mile a minute ; especially her co-workers .
+
+mason barely acknowledged her .
+
+Query 0
+having made the decision , she calculated the distance .
+hmm , maybe she was closer to that inner circle than she 'd thought .
+new yorkers talked a mile a minute ; especially her co-workers .
+
+Query 1
+mason barely acknowledged her .
+`` yes , mason is almost two .
+new yorkers talked a mile a minute ; especially her co-workers .
+
+instead , his baby blues remained focused on the television .
+
+Query 0
+instead , his baby blues remained focused on the television .
+distance simply was n't 'done ' in this line of business .
+he had n't noticed the differences in their heights-he 'd been focusing on her too much .
+
+Query 1
+instead , his baby blues remained focused on the television .
+distance simply was n't 'done ' in this line of business .
+he had n't noticed the differences in their heights-he 'd been focusing on her too much .
+
+since the movie was almost over , megan knew she better slip into the bedroom and finish getting ready .
+
+Query 0
+since the movie was almost over , megan knew she better slip into the bedroom and finish getting ready .
+having made the decision , she calculated the distance .
+megan knew what he meant when the plane started gaining speed down the runaway .
+
+Query 1
+since the movie was almost over , megan knew she better slip into the bedroom and finish getting ready .
+having made the decision , she calculated the distance .
+megan knew what he meant when the plane started gaining speed down the runaway .
+
+Minimum time: 0.142185 seconds
+Maximum time: 0.167137 seconds
+Average time: 0.150367 seconds
+Standard deviation: 0.007774 seconds
+
