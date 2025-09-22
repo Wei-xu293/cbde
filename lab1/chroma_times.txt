@@ -4,6 +4,7 @@ Maximum time: 394.667032 seconds
 Average time: 300.466737 seconds
 Standard deviation: 49.805606 seconds
 
+
 usually , he would be tearing around the living room , playing with his toys .
 
 Query 0
