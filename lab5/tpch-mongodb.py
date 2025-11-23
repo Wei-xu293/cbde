@@ -30,7 +30,7 @@ def q2(collection, size, type, region):
         },
         {
             "$group": {
-                "_id": "$part.mfgr",
+                "_id": "$part.key",
                 "minSupplyCost": {"$min": "$supplyCost"},
                 "documents": {"$push": "$$ROOT"},
             }

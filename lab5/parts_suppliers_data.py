@@ -57,7 +57,7 @@ parts_suppliers_data = [
         "_id": "1001_200",
         "partKey": 1001,
         "suppKey": 200,
-        "supplyCost": 8.25,
+        "supplyCost": 8.25, # Lowest cost for brass 10 in Europe
         "part": {
             "name": "Brass-Fitting-10",
             "mfgr": "MFGR#2",
