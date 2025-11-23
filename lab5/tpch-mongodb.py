@@ -35,7 +35,9 @@ def q2(collection, size, type, region):
                 "documents": {"$push": "$$ROOT"},
             }
         },
-        {"$unwind": "$documents"},
+        {
+            "$unwind": "$documents"
+        },  # https://stackoverflow.com/questions/16448175/whats-the-unwind-operator-in-mongodb
         {  # filter only documents where supplycost equals minSupplyCost
             "$match": {"$expr": {"$eq": ["$documents.supplyCost", "$minSupplyCost"]}}
         },
