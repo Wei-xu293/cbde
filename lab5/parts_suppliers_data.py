@@ -1,0 +1,176 @@
+# parts_suppliers_data.py
+"""
+Sample data for Parts-Suppliers collection in MongoDB
+Format: Composite key _id = PARTKEY_SUPPKEY with embedded part and supplier data
+"""
+
+parts_suppliers_data = [
+    {
+        "_id": "4567_890",
+        "partKey": 4567,
+        "suppKey": 890,
+        "supplyCost": 10.50,
+        "part": {
+            "name": "Part-A-Name",
+            "mfgr": "MFGR#1",
+            "type": "BRASS",
+            "size": 10,
+            "brand": "marca",
+            "container": "ab324",
+            "retailPrice": 55000.50
+        },
+        "supplier": {
+            "acctbal": 5000.00,
+            "name": "Supplier-Z",
+            "address": "123 Street",
+            "phone": "555-1234",
+            "comment": "Nice supplier.",
+            "nationName": "GERMANY",
+            "regionName": "EUROPE"
+        }
+    },
+    {
+        "_id": "4567_891",  # Same part, different supplier with lower cost
+        "partKey": 4567,
+        "suppKey": 891,
+        "supplyCost": 9.50,  # Lower cost for same part
+        "part": {
+            "name": "Part-A-Name",
+            "mfgr": "MFGR#1", 
+            "type": "BRASS",
+            "size": 10,
+            "brand": "marca",
+            "container": "ab324",
+            "retailPrice": 55000.50
+        },
+        "supplier": {
+            "acctbal": 6000.00,
+            "name": "Supplier-LowCost",
+            "address": "456 Low Cost Ave",
+            "phone": "555-9999",
+            "comment": "Most competitive",
+            "nationName": "GERMANY",
+            "regionName": "EUROPE"
+        }
+    },
+    {
+        "_id": "1001_200",
+        "partKey": 1001,
+        "suppKey": 200,
+        "supplyCost": 8.25,
+        "part": {
+            "name": "Brass-Fitting-10",
+            "mfgr": "MFGR#2",
+            "type": "BRASS",
+            "size": 10,
+            "brand": "brand2",
+            "container": "cont123",
+            "retailPrice": 42000.00
+        },
+        "supplier": {
+            "acctbal": 4500.00,
+            "name": "Supplier-France",
+            "address": "Paris Address",
+            "phone": "555-1111",
+            "comment": "Good quality",
+            "nationName": "FRANCE", 
+            "regionName": "EUROPE"
+        }
+    },
+    {
+        "_id": "1234_567",
+        "partKey": 1234,
+        "suppKey": 567,
+        "supplyCost": 8.75,
+        "part": {
+            "name": "Part-B-Name",
+            "mfgr": "MFGR#2",
+            "type": "STEEL",
+            "size": 15,
+            "brand": "brand2",
+            "container": "cd456",
+            "retailPrice": 32000.00
+        },
+        "supplier": {
+            "acctbal": 7500.50,
+            "name": "Supplier-X",
+            "address": "456 Avenue",
+            "phone": "555-5678",
+            "comment": "Reliable partner",
+            "nationName": "FRANCE",
+            "regionName": "EUROPE"
+        }
+    },
+    {
+        "_id": "7890_123",
+        "partKey": 7890,
+        "suppKey": 123,
+        "supplyCost": 12.25,
+        "part": {
+            "name": "Part-C-Name",
+            "mfgr": "MFGR#1",
+            "type": "BRASS",
+            "size": 8,
+            "brand": "marca",
+            "container": "ef789",
+            "retailPrice": 48000.75
+        },
+        "supplier": {
+            "acctbal": 3200.00,
+            "name": "Supplier-Y",
+            "address": "789 Boulevard",
+            "phone": "555-9012",
+            "comment": "Fast delivery",
+            "nationName": "GERMANY",
+            "regionName": "EUROPE"
+        }
+    },
+    {
+        "_id": "2345_678",
+        "partKey": 2345,
+        "suppKey": 678,
+        "supplyCost": 9.99,
+        "part": {
+            "name": "Part-D-Name",
+            "mfgr": "MFGR#3",
+            "type": "COPPER",
+            "size": 20,
+            "brand": "brand3",
+            "container": "gh012",
+            "retailPrice": 28000.25
+        },
+        "supplier": {
+            "acctbal": 4200.75,
+            "name": "Supplier-W",
+            "address": "012 Road",
+            "phone": "555-3456",
+            "comment": "Quality materials",
+            "nationName": "ITALY",
+            "regionName": "EUROPE"
+        }
+    },
+    {
+        "_id": "3456_789",
+        "partKey": 3456,
+        "suppKey": 789,
+        "supplyCost": 11.50,
+        "part": {
+            "name": "Part-E-Name",
+            "mfgr": "MFGR#2",
+            "type": "ALUMINUM",
+            "size": 12,
+            "brand": "brand4",
+            "container": "ij345",
+            "retailPrice": 38000.00
+        },
+        "supplier": {
+            "acctbal": 6800.25,
+            "name": "Supplier-V",
+            "address": "345 Lane",
+            "phone": "555-7890",
+            "comment": "Competitive pricing",
+            "nationName": "UNITED KINGDOM",
+            "regionName": "EUROPE"
+        }
+    }
+]
