@@ -19,6 +19,32 @@ except Exception as e:
     print(f"Error inserting documents: {e}")
 
 
+def q1(collection, date):
+    pipeline = [
+        {"$unwind": "$lineitems"},
+        {"match": {"lineitems.shipDate": {"lte": date}}},
+        {
+            "$addFields": {
+                "revenue": {
+                    "$multiply": [
+                        "$lineitems.extendedPrice",
+                        {"$substract": [1, "$lineitems.discount"]},
+                    ]
+                },
+                "charge": {
+                    "$multiply": [
+                        "$lineitems.extendedPrice",
+                        {"$substract": [1, "$lineitems.discount"]},
+                        {"$add": [1 + "lineitems.tax"]},
+                    ]
+                },
+            }
+        },
+        {"$group": {}},
+    ]
+    return list(collection.aggregate(pipeline))
+
+
 def q2(collection, size, type, region):
     pipeline = [
         {
