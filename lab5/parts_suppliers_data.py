@@ -17,7 +17,7 @@ parts_suppliers_data = [
             "size": 10,
             "brand": "marca",
             "container": "ab324",
-            "retailPrice": 55000.50
+            "retailPrice": 55000.50,
         },
         "supplier": {
             "acctbal": 5000.00,
@@ -26,8 +26,8 @@ parts_suppliers_data = [
             "phone": "555-1234",
             "comment": "Nice supplier.",
             "nationName": "GERMANY",
-            "regionName": "EUROPE"
-        }
+            "regionName": "EUROPE",
+        },
     },
     {
         "_id": "4567_891",  # Same part, different supplier with lower cost
@@ -36,12 +36,12 @@ parts_suppliers_data = [
         "supplyCost": 9.50,  # Lower cost for same part
         "part": {
             "name": "Part-A-Name",
-            "mfgr": "MFGR#1", 
+            "mfgr": "MFGR#1",
             "type": "BRASS",
             "size": 10,
             "brand": "marca",
             "container": "ab324",
-            "retailPrice": 55000.50
+            "retailPrice": 55000.50,
         },
         "supplier": {
             "acctbal": 6000.00,
@@ -50,8 +50,8 @@ parts_suppliers_data = [
             "phone": "555-9999",
             "comment": "Most competitive",
             "nationName": "GERMANY",
-            "regionName": "EUROPE"
-        }
+            "regionName": "EUROPE",
+        },
     },
     {
         "_id": "1001_200",
@@ -65,7 +65,7 @@ parts_suppliers_data = [
             "size": 10,
             "brand": "brand2",
             "container": "cont123",
-            "retailPrice": 42000.00
+            "retailPrice": 42000.00,
         },
         "supplier": {
             "acctbal": 4500.00,
@@ -73,9 +73,9 @@ parts_suppliers_data = [
             "address": "Paris Address",
             "phone": "555-1111",
             "comment": "Good quality",
-            "nationName": "FRANCE", 
-            "regionName": "EUROPE"
-        }
+            "nationName": "FRANCE",
+            "regionName": "EUROPE",
+        },
     },
     {
         "_id": "1234_567",
@@ -89,7 +89,7 @@ parts_suppliers_data = [
             "size": 15,
             "brand": "brand2",
             "container": "cd456",
-            "retailPrice": 32000.00
+            "retailPrice": 32000.00,
         },
         "supplier": {
             "acctbal": 7500.50,
@@ -98,8 +98,8 @@ parts_suppliers_data = [
             "phone": "555-5678",
             "comment": "Reliable partner",
             "nationName": "FRANCE",
-            "regionName": "EUROPE"
-        }
+            "regionName": "EUROPE",
+        },
     },
     {
         "_id": "7890_123",
@@ -113,7 +113,7 @@ parts_suppliers_data = [
             "size": 8,
             "brand": "marca",
             "container": "ef789",
-            "retailPrice": 48000.75
+            "retailPrice": 48000.75,
         },
         "supplier": {
             "acctbal": 3200.00,
@@ -122,8 +122,8 @@ parts_suppliers_data = [
             "phone": "555-9012",
             "comment": "Fast delivery",
             "nationName": "GERMANY",
-            "regionName": "EUROPE"
-        }
+            "regionName": "EUROPE",
+        },
     },
     {
         "_id": "2345_678",
@@ -137,7 +137,7 @@ parts_suppliers_data = [
             "size": 20,
             "brand": "brand3",
             "container": "gh012",
-            "retailPrice": 28000.25
+            "retailPrice": 28000.25,
         },
         "supplier": {
             "acctbal": 4200.75,
@@ -146,8 +146,8 @@ parts_suppliers_data = [
             "phone": "555-3456",
             "comment": "Quality materials",
             "nationName": "ITALY",
-            "regionName": "EUROPE"
-        }
+            "regionName": "EUROPE",
+        },
     },
     {
         "_id": "3456_789",
@@ -161,7 +161,7 @@ parts_suppliers_data = [
             "size": 12,
             "brand": "brand4",
             "container": "ij345",
-            "retailPrice": 38000.00
+            "retailPrice": 38000.00,
         },
         "supplier": {
             "acctbal": 6800.25,
@@ -170,7 +170,7 @@ parts_suppliers_data = [
             "phone": "555-7890",
             "comment": "Competitive pricing",
             "nationName": "UNITED KINGDOM",
-            "regionName": "EUROPE"
-        }
-    }
+            "regionName": "EUROPE",
+        },
+    },
 ]
