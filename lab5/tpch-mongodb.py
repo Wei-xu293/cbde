@@ -1,16 +1,27 @@
 from pymongo import MongoClient
+from datetime import datetime
 from parts_suppliers_data import parts_suppliers_data
+from orders_data_q1 import orders_data_q1
 import re
 
 # Connect to MongoDB
 client = MongoClient("mongodb://localhost:27017/")
 db = client["TPCH"]
 ps_collection = db["parts_suppliers"]
+o_collection = db["orders"]
 
 # Clear existing collection before inserting
 ps_collection.drop()
+o_collection.drop()
 
 # Insert the data
+try:
+    result = o_collection.insert_many(orders_data_q1)
+    print(f"Successfully inserted {len(result.inserted_ids)} documents")
+    print(f"Inserted IDs: {result.inserted_ids}")
+except Exception as e:
+    print(f"Error inserting documents: {e}")
+
 try:
     result = ps_collection.insert_many(parts_suppliers_data)
     print(f"Successfully inserted {len(result.inserted_ids)} documents")
@@ -22,25 +33,65 @@ except Exception as e:
 def q1(collection, date):
     pipeline = [
         {"$unwind": "$lineitems"},
-        {"match": {"lineitems.shipDate": {"lte": date}}},
+        {
+            "$match": {
+                "$expr": {
+                    "$lte": [
+                        {"$dateFromString": {"dateString": "$lineitems.shipDate.date"}},
+                        date,
+                    ]
+                }
+            }
+        },
         {
             "$addFields": {
                 "revenue": {
                     "$multiply": [
                         "$lineitems.extendedPrice",
-                        {"$substract": [1, "$lineitems.discount"]},
+                        {"$subtract": [1, "$lineitems.discount"]},
                     ]
                 },
                 "charge": {
                     "$multiply": [
                         "$lineitems.extendedPrice",
-                        {"$substract": [1, "$lineitems.discount"]},
-                        {"$add": [1 + "lineitems.tax"]},
+                        {"$subtract": [1, "$lineitems.discount"]},
+                        {"$add": [1, "$lineitems.tax"]},
                     ]
                 },
             }
         },
-        {"$group": {}},
+        {
+            "$group": {
+                "_id": {
+                    "returnflag": "$lineitems.returnFlag",
+                    "linestatus": "$lineitems.lineStatus",
+                },
+                "sum_qty": {"$sum": "$lineitems.quantity"},
+                "sum_base_price": {"$sum": "$lineitems.extendedPrice"},
+                "sum_disc_price": {"$sum": "$revenue"},
+                "sum_charge": {"$sum": "$charge"},
+                "avg_qty": {"$avg": "$lineitems.quantity"},
+                "avg_price": {"$avg": "$lineitems.extendedPrice"},
+                "avg_disc": {"$avg": "$lineitems.discount"},
+                "count_order": {"$sum": 1},
+            }
+        },
+        {
+            "$project": {
+                "_id": 0,
+                "l_returnflag": "$_id.returnflag",
+                "l_linestatus": "$_id.linestatus",
+                "sum_qty": "$sum_qty",
+                "sum_base_price": "$sum_base_price",
+                "sum_disc_price": "$sum_disc_price",
+                "sum_charge": "$sum_charge",
+                "avg_qty": "$avg_qty",
+                "avg_price": "$avg_price",
+                "avg_disc": "$avg_disc",
+                "count_order": "$count_order",
+            }
+        },
+        {"$sort": {"l_returnflag": 1, "l_linestatus": 1}},
     ]
     return list(collection.aggregate(pipeline))
 
@@ -89,6 +140,25 @@ def q2(collection, size, type, region):
 
 
 if __name__ == "__main__":
+    print("Query 1 for shipdate before 2025-11-24")
+    date = datetime(2025, 11, 24)
+    results = q1(o_collection, date)
+    print(f"Found {len(results)} results:")
+    for i, result in enumerate(results, 1):
+        print(f"\n--- Result {i} ---")
+        print(f"l_returnflag: {result['l_returnflag']}")
+        print(f"l_linestatus: {result['l_linestatus']}")
+        print(f"sum_qty: {result['sum_qty']}")
+        print(f"sum_base_price: {result['sum_base_price']}")
+        print(f"sum_disc_price: {result['sum_disc_price']}")
+        print(f"sum_charge: {result['sum_charge']}")
+        print(f"avg_qty: {result['avg_qty']}")
+        print(f"avg_price: {result['avg_price']}")
+        print(f"avg_disc: {result['avg_disc']}")
+        print(f"count_order: {result['count_order']}")
+
+    print()
+
     print("Query 2 for BRASS parts of size 10 in EUROPE")
     results = q2(ps_collection, 10, "BRASS", "EUROPE")
     print(f"Found {len(results)} results:")
